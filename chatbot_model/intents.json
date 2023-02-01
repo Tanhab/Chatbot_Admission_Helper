@@ -3,35 +3,39 @@
     {
       "tag": "greeting",
       "patterns": [
-        "Hi",
-        "How are you",
+        "Hi,SUST Chatbot",
+        "Hlw",
         "Is anyone there?",
         "Hello",
-        "Good day",
-        "Whats up",
+        "I need help",
+        "Admission help needed",
         "Hey",
-        "greetings"
+        "hi",
+        "hey",
+        "hey there",
+        "hello sust chatbot",
+        "HI bot",
+        "hiiiiiiii",
+        "Hi, again",
+        "I seek help",
+        "Help needed",
+        "Need some information",
+        "Hello help needed",
+        "Anyone here?",
+        "Hellow",
+        "hy"
       ],
+
       "responses": [
         "Hello!",
-        "Good to see you again!",
-        "Hi there, how can I help?"
+        "Good to see you",
+        "Welcome",
+        "Hi there, how can I help?",
+        "Welcome to SUST Chatbot",
+        "Hi. Feel free to ask any query"
       ]
     },
-    {
-      "tag": "goodbye",
-      "patterns": [
-        "cya",
-        "See you later",
-        "Goodbye",
-        "I am Leaving",
-        "Have a Good day",
-        "bye",
-        "cao",
-        "see ya"
-      ],
-      "responses": ["Sad to see you go :(", "Talk to you later", "Goodbye!"]
-    },
+    
     {
       "tag": "payment",
       "patterns": [
@@ -43,13 +47,64 @@
     },
     {
       "tag": "exam_date",
-      "patterns": ["When is the exam?"],
-      "responses": ["1/1/2011"]
+      "patterns": [
+        "When is admission exam?",
+        "exam kobe",
+        "xm kobe ",
+        "kokhon exam hobe",
+        "Kundin exam hobe",
+        "When will be admission test held?",
+        "Exam kondin hobe",
+        "SUST admission xm kobe",
+        "when is sust admission xm",
+        "xm kokhon",
+        "When will be admission test?",
+        "When is SUST admission test date?",
+        "What is the SUST admission exam date?",
+        "When will SUST admission test tale place?",
+        "When is admission test?",
+        "Which date will the admission test take place",
+        "When is admission test?",
+        "What is the SUST admission test date?",
+        "Sust admission date",
+        "What is the admission test date?",
+        "When will admission exam take place?",
+        "Tell me about exam date",
+        "Tell us about SUST admission exam date",
+        "Tell us about SUST admission test date",
+        "Tell me about SUST admission exam date",
+        "When is the admission exam of SUST?",
+        "Which date will be admission exam?",
+        "Sust admission test date",
+        "sust admission exam date",
+        "When SUST admission test take place?",
+        "Admission test date",
+        "When is the admission test of SUST?",
+        "When will SUST admission test occur?"
+
+      ],
+      "responses": [
+        "Hello! SUST admission test will be held on the month of May",
+        "Admssion test of SUST will take place on May",
+        "Date of SUST admission test will be on May"
+      ]
     },
     {
-      "tag": "sust_location",
-      "patterns": ["where is sust"],
-      "responses": ["I can do alot"]
+      "tag": "location",
+      "patterns": [
+        "where is sust located?",
+        "where is sust?",
+        "SUST is in where?",
+        "Where is SUST located in Sylhet?",
+        "Tell me the location of SUST",
+        "How to go to SUST",
+        "Where is SUST?",
+      "Where is SUST situated?",
+        "Which place is SUST in?"
+      ],
+      "responses": ["SUST is situated in Akhalia,Sylhet",
+      "SUST is in Akhalia,Sylhet",
+      "SUST is located in Akhalia, Kumargaon, Sylhet , Bangladesh"]
     },
     {
       "tag": "about_sust",
@@ -94,6 +149,49 @@
         "Whats the result",
         "Is result published?"],
         "responses": ["You own the following shares: ABBV, AAPL, FB, NVDA and an ETF of the S&P 500 Index!"]
+    },
+    {
+      "tag": "resident",
+      "patterns": [
+        "What is the hall facility of SUST?",
+        "How many halls are in here?",
+       "Halls of sust",
+	
+        "SUST Hall",
+        "Hall seats of SUST",
+        "Hall facilities",
+"Sust er hall gula kemon",
+"SUST hall availability",
+"Seats in hall",
+"Sust hall seats",
+       "SUST er hall obostha",
+"Hall numbers"
+
+      ],
+      "responses": ["Currently,there are 5 halls of residence. A significant number of students reside privately near the university area of Sylhet metro. They are - Shah Paran Hall,Bangabandhu Sheikh Mujibur Rahman Hall,Syed Mujtaba Ali Hall,Shahid Jononi Jahanara Imam Hall,Begum Sirajunnesa Chowdhury Hall."]
+    },
+{
+      "tag": "cost",
+      "patterns": ["Cost of admission"," How much money is needed for admission",
+"Koto taka lagbe admission hoite", "Amount of taka for admission", "Money for admission",
+" Admission cost","Vortir taka","vortir tk ","koto tk lagbe vorti te?","First admission cost",
+"SUST admission cost","How much money needed?"
+],
+      "responses": ["It will take 10,000tk in the first admission"]
+    },{
+      "tag": "goodbye",
+      "patterns": [
+        "cya",
+        "Biday","Onk onk dhonnobad","OK then bye","C u","by","ba baye","bye bye","Allah hafez","Will come again","Good bye",
+        "See you later",
+        "Goodbye",
+        "I am Leaving",
+        "Have a Good day",
+        "bye",
+        "cao",
+        "see ya"
+      ],
+      "responses": ["Sad to see you go :(", "Talk to you later", "Goodbye!"]
     }
   ]
 }
