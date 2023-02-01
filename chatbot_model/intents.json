@@ -33,20 +33,6 @@
       "responses": ["Sad to see you go :(", "Talk to you later", "Goodbye!"]
     },
     {
-      "tag": "ability",
-      "patterns": ["What can you do?"],
-      "responses": ["I can do alot"]
-    },
-    {
-      "tag": "result",
-      "patterns": [
-        "What is my result",
-        "Whats the result",
-        "Is result published?"
-      ],
-      "responses": ["I can do alot"]
-    },
-    {
       "tag": "payment",
       "patterns": [
         "Is my payment confirmed?",
@@ -54,11 +40,6 @@
         "Can you confirm my payment?"
       ],
       "responses": ["Nope"]
-    },
-    {
-      "tag": "exam_center",
-      "patterns": ["What is my exam center?"],
-      "responses": ["qbristo"]
     },
     {
       "tag": "exam_date",
@@ -74,6 +55,45 @@
       "tag": "about_sust",
       "patterns": ["Tell me about sust"],
       "responses": ["I can do alot"]
+    },
+    {"tag": "sust",
+      "patterns": ["Tell me something about sust","what is sust","Can you give me some details about SUST?",
+      "SUST?","SUST","Shahjalal University of Science and Technology","Do you know about sust",
+      "say something about sust","Can you expand on SUST?","I am looking for information about SUST"],
+      "responses": ["Hello!", "Good to see you again!", "Hi there, how can I help?"]
+    },
+    {"tag": "ability",
+      "patterns": ["What can you do?", "What are your capabilities?","What kind of questions can you answer?","What are your services?", 
+      "Tell me about your services.", "How can you help me?","services","sust chatbot services","What are your functions?","What is your purpose?"],
+      "responses": ["You own the following shares: ABBV, AAPL, FB, NVDA and an ETF of the S&P 500 Index!"]
+    },
+    {
+        "tag": "sust_chatbot",
+        "patterns": ["what is you?", "Tell me something about you", "Who are you?", "who you are?","what is sust chatbot?","Sust Chatbot"],
+        "responses": ["You own the following shares: ABBV, AAPL, FB, NVDA and an ETF of the S&P 500 Index!"]
+    },
+    {
+        "tag": "exam_center",
+        "patterns": ["where will be the exam today?","where is the exam center?","Tell me about the exam center","Exam center","I don't know anout my exam center",
+        "Test center","Examination center","I need to know the address of my exam center","Can you help me find the exam center for my subject?"],
+        "responses": ["You own the following shares: ABBV, AAPL, FB, NVDA and an ETF of the S&P 500 Index!"]
+    },
+    {
+        "tag": "result",
+        "patterns": ["What was my result in the exam?",
+        "Did I pass the exam?",
+        "What was my score in the exam?",
+        "Can you tell me my exam result?",
+        "I want to know my exam result.",
+        "Could you please let me know my exam result?",
+        "I'd like to see my exam result.",
+        "Can you show me my exam result?",
+        "What was my performance in the exam?",
+        "Can you give me my examresult summary?",
+        "What is my result",
+        "Whats the result",
+        "Is result published?"],
+        "responses": ["You own the following shares: ABBV, AAPL, FB, NVDA and an ETF of the S&P 500 Index!"]
     }
   ]
 }

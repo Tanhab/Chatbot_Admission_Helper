@@ -47,7 +47,7 @@ class IAssistant(metaclass=ABCMeta):
 class GenericAssistant(IAssistant):
 
     def __init__(self, load=False, model_name="test_model"):
-        self.root_directory = "D:\deep learning\Chatbot_Admission_Helper\chatbot_model"
+        self.root_directory = "D:\ChatbotAPI\Chatbot_Admission_Helper\chatbot_model"
         self.intents = os.path.join(self.root_directory, "intents.json")
         self.model_name = model_name
 
