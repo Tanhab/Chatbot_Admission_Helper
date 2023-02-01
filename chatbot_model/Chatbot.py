@@ -46,12 +46,12 @@ class IAssistant(metaclass=ABCMeta):
 
 class GenericAssistant(IAssistant):
 
-    def __init__(self, intents="D:\deep learning\Chatbot_Admission_Helper\chatbot_model\intents.json", load=False, model_name="test_model"):
-        self.intents = intents
+    def __init__(self, load=False, model_name="test_model"):
+        self.root_directory = "D:\deep learning\Chatbot_Admission_Helper\chatbot_model"
+        self.intents = os.path.join(self.root_directory, "intents.json")
         self.model_name = model_name
 
-        if intents.endswith(".json"):
-            self.load_json_intents(intents)
+        self.load_json_intents(self.intents)
         self.lemmatizer = WordNetLemmatizer()
 
         if load:
@@ -59,7 +59,6 @@ class GenericAssistant(IAssistant):
         else:
             self.train_model()
             self.save_model()
-        
 
     def load_json_intents(self, intents):
         self.intents = json.loads(open(intents).read())
@@ -125,10 +124,12 @@ class GenericAssistant(IAssistant):
 
     def save_model(self, model_name=None):
         if model_name is None:
-            self.model.save(f"{self.model_name}.h5", self.hist)
-            pickle.dump(self.words, open(f'{self.model_name}_words.pkl', 'wb'))
+            self.model.save(os.path.join(
+                self.root_directory, "test_model.h5"), self.hist)
+            pickle.dump(self.words, open(os.path.join(
+                self.root_directory, 'test_model_words.pkl'), 'wb'))
             pickle.dump(self.classes, open(
-                f'{self.model_name}_classes.pkl', 'wb'))
+                os.path.join(self.root_directory, 'test_model_classes.pkl'), 'wb'))
         else:
             self.model.save(f"{model_name}.h5", self.hist)
             pickle.dump(self.words, open(f'{model_name}_words.pkl', 'wb'))
@@ -137,14 +138,18 @@ class GenericAssistant(IAssistant):
     def load_model(self, model_name=None):
         if model_name is None:
             self.words = pickle.load(
-                open(f'{self.model_name}_words.pkl', 'rb'))
+                open(os.path.join(self.root_directory, 'test_model_words.pkl'), 'rb'))
             self.classes = pickle.load(
-                open(f'{self.model_name}_classes.pkl', 'rb'))
-            self.model = tf.keras.models.load_model(f'{self.model_name}.h5')
+                open(os.path.join(self.root_directory, 'test_model_classes.pkl'), 'rb'))
+            self.model = tf.keras.models.load_model(
+                os.path.join(self.root_directory, "test_model.h5"))
         else:
-            self.words = pickle.load(open(f'{model_name}_words.pkl', 'rb'))
-            self.classes = pickle.load(open(f'{model_name}_classes.pkl', 'rb'))
-            self.model = tf.keras.models.load_model(f'{model_name}.h5')
+            self.words = pickle.load(
+                open(os.path.join(self.root_directory, 'test_model_words.pkl'), 'rb'))
+            self.classes = pickle.load(
+                open(os.path.join(self.root_directory, 'test_model_classes.pkl'), 'rb'))
+            self.model = tf.keras.models.load_model(
+                os.path.join(self.root_directory, "test_model.h5"))
 
     def _clean_up_sentence(self, sentence):
         sentence_words = nltk.word_tokenize(sentence)
