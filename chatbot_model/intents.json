@@ -478,6 +478,14 @@
         "See u"
       ],
       "responses": ["Sad to see you go :(", "Talk to you later"]
+    },
+    {
+      "tag": "extra",
+      "patterns": [
+        "welcome",
+        "I'm good","ok","I'm fine"
+      ],
+      "responses": ["Let me know if you need any help."]
     }
   ]
 }
