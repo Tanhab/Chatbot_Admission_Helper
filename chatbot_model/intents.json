@@ -106,17 +106,45 @@
       "SUST is in Akhalia,Sylhet",
       "SUST is located in Akhalia, Kumargaon, Sylhet , Bangladesh"]
     },
-    {
-      "tag": "about_sust",
-      "patterns": ["Tell me about sust"],
-      "responses": ["I can do alot"]
-    },
-    {"tag": "sust",
-      "patterns": ["Tell me something about sust","what is sust","Can you give me some details about SUST?",
-      "SUST?","SUST","Shahjalal University of Science and Technology","Do you know about sust",
-      "say something about sust","Can you expand on SUST?","I am looking for information about SUST"],
-      "responses": ["Hello!", "Good to see you again!", "Hi there, how can I help?"]
-    },
+    
+    
+{"tag": "sust",
+"patterns": ["Tell me something about sust","what is sust","Can you give me some details about SUST?",
+"SUST?","SUST","Shahjalal University of Science and Technology","Do you know about sust",
+"say something about sust","Can you expand on SUST?","I am looking for information about SUST","Need info of SUST","SUST information","Tell us about sust"],
+"responses": ["Hello! Shahjalal University of Science and Technology (SUST) was established in 1986. The only university of its kind at that time, it started it''s journey on the 13th of February 1991 with only three departments: Physics, Chemistry and Economics, 13 teachers and 205 students. It has now expanded to 7 schools, 27 departments , 2 institutes and and centers. The number of teachers has grown to 566 and the students to 8596. Besides, the University has 12 affiliated colleges under the School of Medical Sciences with 4000 students."]
+},
+{
+"tag": "academic_building",
+"patterns": [
+  "Academic buildings in sust","SUST academic buildings","Sust building","Number of academic buildings in sust",
+  "How many academic buildings are there in sust","Buildings of study",
+  "Building koyta","Academic Buliding of SUST"
+],
+"responses": ["The academic buildings are  IICT Building, Academic Building A, Academic Building B, Academic Building C, Academic Building D, Academic Building E"]
+},
+
+{
+"tag": "bank",
+"patterns": [
+  "Where I can do payment","Is there any bank in sust","Where is Sonali bank of sust","Where should I pay my fee","Where am I going to pay my initial fee?",
+"Direction of Sonali bank","Sonali Bank of SUST","Pay fee in sust","Where can I Pay money","Bank located in SUST","SUST Banks","Number of banks in SUST",
+"Sonali bank of sust","SUST sonali bank"
+],
+"responses": ["There is a Sonali Bank branch in SUST. It is situated near the basket ball ground of SUST","Here SUST has a Sonali bank branch for payement related issues. You can find it after B building near the basktetball ground"]
+},
+
+{
+"tag": "organization",
+"patterns": [
+"What societies are available at the university?",
+"How many organizations are there in SUST","tell me about sust organizations",
+"Which organizations I can participate","SUST organizations","Sust society and organizations","Tell me about different types of organizations of SUST"
+],
+"responses": ["There are various popular organizations in sust of various taste.Some popular organizations are -Shahjalal University Photographers Association (SUPA), -Shahjalal University Press Club, -Shahjalal University Debating Society (SUDS), -SUST CAREER CLUB (SUSTCC),-SUST School of debate, SUST-SD, -Tourist Club SUST, -Shikorh, -Chokh Film Society (CFS) , -NONGAR, -Sports SUST"]
+
+},
+
     {"tag": "ability",
       "patterns": ["What can you do?", "What are your capabilities?","What kind of questions can you answer?","What are your services?", 
       "Tell me about your services.", "How can you help me?","services","sust chatbot services","What are your functions?","What is your purpose?"],
