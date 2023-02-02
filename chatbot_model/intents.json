@@ -156,7 +156,7 @@
     {"tag": "ability",
       "patterns": ["What can you do?", "What are your capabilities?","What kind of questions can you answer?","What are your services?", 
       "Tell me about your services.", "How can you help me?","services","sust chatbot services","What are your functions?","What is your purpose?"],
-      "responses": ["I can provide any of the following services\n1.Enquiry about SUST \n2.Admission Date and Time \n3.Checking Exam centre\n4.Providing admission test result\n5.Payment Update\n6.Admission queries\n7.Information about various Departments\n8.Residential information\n9.Information about various campus organizations"]
+      "responses": ["I can provide any of the following services \n1.Enquiry about SUST \n2.Admission Date and Time \n3.Checking Exam centre\n4.Providing admission test result\n5.Payment Update\n6.Admission queries\n7.Information about various Departments\n8.Residential information\n9.Information about various campus organizations"]
     },
     {
         "tag": "sust_chatbot",
@@ -166,7 +166,7 @@
     {
         "tag": "exam_center",
         "patterns": ["where will be the exam today?","where is the exam center?","Tell me about the exam center","Exam center","I don't know anout my exam center",
-        "Test center","Examination center","I need to know the address of my exam center","Can you help me find the exam center for my subject?"],
+        "Test center","exam-center","Examination center","I need to know the address of my exam center","Can you help me find the exam center for my subject?"],
         "responses": ["SUST IICT Building"]
     },
     {
@@ -209,8 +209,9 @@
 " Admission cost","Vortir taka","vortir tk ","koto tk lagbe vorti te?","First admission cost",
 "SUST admission cost","How much money needed?"
 ],
-      "responses": ["It will take 10,000tk in the first admission"]
+      "responses": ["Applicant must bring the Admission Fee of BDT 15000 to complete the admission. But, the applicant who already completed his/her primary admission to any GST University have to bring only BDT 10000 for the admission."]
     },
+
     {
       "tag": "document",
       "patterns": [
@@ -222,6 +223,74 @@
 "Which informations are needed in admission"
       ],
       "responses": ["Hello. Students who did not submit their HSC & SSC original Marksheets at SUST, are requested to bring their original academic documents (either all Marksheets or Certificates). "]
+    },
+    {
+
+      "tag": "Anthro",
+"patterns": [
+        "Tell me about Anthropology department",
+"why should i get admitted into Anthropology dept",
+"ANP dept",
+"speciality of Anthropology dept",
+"Anthropology dept",
+"Anthropology is under which school",
+"Facilities of Anthropology dept","Anthropology facilities",
+"Overview of Anthropology",
+"Anthropology is under which school"
+],
+"responses": ["The Department of Anthropology at SUST was established in 1995. The first course was offered in 1995 and the first 3 year Bachelor of Social Science and 1 year Master of Social Science Degrees was awarded in 1998 and 1999. Since 1995, more than one thousand students have received Bachelor of Social Science and Master of Social Science degrees. The department hosted a good number world renowned anthropologist over the years and initiated several research activities. SUST has now one of the oldest and most successful undergraduate and postgraduate Anthropology programs in Bangladesh and there is growing interest among students in taking up anthropology as the subject of study. Since its inception, the department has sought to achieve the highest possible distinction for teaching and scholarly research and has accomplished this by extending boundaries of knowledge in both traditional and new fields in the social sciences. We promote the highest academic standards in our teaching, our scholarship, and the connections we build between them. Synchronized with our institution’s rich heritage, the department is committed to produce the country’s leader in all facets, from classroom instruction to national policy setting. Our values-based commitment is to create an optimal learning environment for all students from all over the country and help expand the horizons of knowledge and culture among students, colleagues, and the general citizenry."] 
+    },
+    {
+  
+      "tag": "Mecha",
+      "patterns": [
+              "Tell me about archietecture department",
+      "why should i get admitted into me dept",
+      "me dept",
+      "speciality of me dept",
+      " Mechanical Engineering dept",
+      "ME is under which school",
+      "Facilities of ME dept","ME facilities",
+      "Overview of ME",
+      "ME is under which school"
+      ],
+      "responses": ["The vision of the Department of Mechanical Engineering is to be nationally and internationally recognized in providing mechanical engineering education, leading to well qualified engineers who are innovative, immediate contributors to their profession and successful in advanced studies. The Mechanical Engineering program makes available a high quality, relevant engineering education to all the students admitted in the Department. The Program dedicates itself to providing students with a set of skills, knowledge and attitudes that will permit its graduates to succeed and thrive as engineers and leaders. The Program strives to: Prepare its graduates to pursue life-long learning, serve the profession and meet intellectual, ethical and career challenges; Maintain a vital, state-of-the-art research enterprise to provide its students and faculty with opportunities to create, interpret, apply and disseminate knowledge; Prepare its graduates to become industrial and civic leaders and demonstrate entrepreneurial spirit. ME is situated in E building."
+      ]
+    },
+
+    {
+
+      "tag": "Stat",
+"patterns": [
+        "Tell me about archietecture department",
+"why should i get admitted into stat dept",
+"stat dept",
+"speciality of statistics dept",
+"statistics dept",
+"Stat is under which school",
+"Facilities of stat dept","Architecture facilities",
+"Overview of stat",
+"stat is under which school"
+
+],
+"responses": ["The Department of Statistics at SUST, which began its academic journey in 1991, is one of the pioneer departments of the university. It is one of the largest concentrations of statistical education and research with 23 faculties and 366 undergraduate and graduate students. Among the faculty members, there are 15 Professors, 4 Associate Professors and 4 Assistant Professors."
+]
+    },
+    {
+      "tag": "Economics",
+"patterns": [
+        "Tell me about Economics department",
+"why should i get admitted into Economics dept",
+"ECO dept",
+"speciality of Economics dept",
+"Economics dept",
+"Economics is under which school",
+"Facilities of Economics dept","Economics facilities",
+"Overview of Economics",
+"Economics is under which school"
+],
+"responses": ["Department of Economics is one of the pioneer departments of Shahjalal University of Science & Technology, Sylhet, Bangladesh. Proudly passing 25th academic year in 2015 this department now encompasses 16 faculty members, more than 300 students in the undergraduate level as well as 50 in the graduate level and a couple in post graduate degree program. Department of Economics, SUST has historically been led by energetic pungent young economists. Though this has caused a lot of troubles to the department in the way of achieving its academic goals and having excellence in its programs, it has also earned some rare feet within a very short period of time. First to incorporate integrated course system in Bangladesh, first to introduce semester system in any non-technical subject in Bangladesh, first to introduce laboratory based training in quantitative economics in Bangladesh – continuation and growth of this historic strength is evidenced by the Department’s performance in successful acceptance of its students in higher degree programs in Economics by renowned universities worldwide as well as their employment in different prestigious positions, involvement in research and various achievements. University Grants Commission (UGC), Bangladesh has granted many research proposals by the faculty members in recent years. Food and Agricultural Organization (FAO) financed the research project on Food Poverty and Consequent Vulnerability of Children"
+]
     },
     {
       "tag": "fet",
@@ -398,7 +467,7 @@
       "tag": "goodbye",
       "patterns": [
         "cya",
-        "Biday","Onk onk dhonnobad","OK then bye","C u","by","ba baye","bye bye","Allah hafez","Will come again","Good bye",
+        "Biday","Onk onk dhonnobad","bye then","C u","by","ba baye","bye bye","Allah hafez","Will come again","Good bye",
         "See you later",
         "Goodbye",
         "I am Leaving",
