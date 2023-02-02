@@ -28,7 +28,7 @@
 
       "responses": [
         
-        "Hello. Welcome to SUST Chatbot. How can I help you ?"
+        "Hello. Welcome to SUST Chatbot. How can I help you?"
       
       ]
     },
@@ -215,7 +215,7 @@
     {
       "tag": "document",
       "patterns": [
-        "What should I bring with me ?",
+        "What should I bring with me?",
 "What are needed for admission?",
 "What is the requirements in admission",
 "what i need to bring with me ?",
