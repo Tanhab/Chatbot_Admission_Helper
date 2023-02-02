@@ -24,7 +24,7 @@ def get_reply(request):
             reply = assistant.request(query['question'])
             if float(reply['probability']) < 0.8:
                 return Response({
-                    "message" : "Sorry, I am not clear what you want to know"
+                    "reply" : "Sorry, I am not clear what you want to know"
                 },status=400,content_type="JSON") 
             else:
                 return Response({
