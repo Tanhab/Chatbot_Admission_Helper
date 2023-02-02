@@ -27,12 +27,9 @@
       ],
 
       "responses": [
-        "Hello!",
-        "Good to see you",
-        "Welcome",
-        "Hi there, how can I help?",
-        "Welcome to SUST Chatbot",
-        "Hi. Feel free to ask any query"
+        
+        "Hello. Welcome to SUST Chatbot. How can I help you ?"
+      
       ]
     },
     
@@ -40,6 +37,11 @@
       "tag": "payment",
       "patterns": [
         "Is my payment confirmed?",
+        "payment",
+        "bkash payement",
+        "payment by rocket",
+        "my payment",
+        "Is my payment successful?",
         "Is payment done for me?",
         "Can you confirm my payment?"
       ],
@@ -84,9 +86,9 @@
 
       ],
       "responses": [
-        "Hello! SUST admission test will be held on the month of May",
-        "Admssion test of SUST will take place on May",
-        "Date of SUST admission test will be on May"
+        "Hello! SUST admission test will be held on 23-05-2023. More details will be disclosed later. Exam will be taken in two groups. Group A from 9am to 12pm and Group B from 2pm to 4pm.",
+        "Admssion test of SUST will take place on 23-05-2023. More details willl be informed soon.Exam will be taken in two groups. Group A from 9am to 12pm and Group B from 2pm to 4pm. Thanks for your query."
+        
       ]
     },
     {
@@ -100,17 +102,23 @@
         "How to go to SUST",
         "Where is SUST?",
       "Where is SUST situated?",
-        "Which place is SUST in?"
+        "Which place is SUST in?",
+        "SUST location","Location",
+        "sust address",
+        "sust kothay","Where is sust", "SUST koi",
+        "sust in sylhet"
+
       ],
-      "responses": ["SUST is situated in Akhalia,Sylhet",
-      "SUST is in Akhalia,Sylhet",
+      "responses": [
       "SUST is located in Akhalia, Kumargaon, Sylhet , Bangladesh"]
     },
     
     
 {"tag": "sust",
-"patterns": ["Tell me something about sust","what is sust","Can you give me some details about SUST?",
-"SUST?","SUST","Shahjalal University of Science and Technology","Do you know about sust",
+"patterns": ["Tell me something about sust","what is sust",
+"Can you give me some details about SUST?",
+"SUST?","SUST",
+"Shahjalal University of Science and Technology","Do you know about sust",
 "say something about sust","Can you expand on SUST?","I am looking for information about SUST","Need info of SUST","SUST information","Tell us about sust"],
 "responses": ["Hello! Shahjalal University of Science and Technology (SUST) was established in 1986. The only university of its kind at that time, it started it''s journey on the 13th of February 1991 with only three departments: Physics, Chemistry and Economics, 13 teachers and 205 students. It has now expanded to 7 schools, 27 departments , 2 institutes and and centers. The number of teachers has grown to 566 and the students to 8596. Besides, the University has 12 affiliated colleges under the School of Medical Sciences with 4000 students."]
 },
@@ -148,18 +156,18 @@
     {"tag": "ability",
       "patterns": ["What can you do?", "What are your capabilities?","What kind of questions can you answer?","What are your services?", 
       "Tell me about your services.", "How can you help me?","services","sust chatbot services","What are your functions?","What is your purpose?"],
-      "responses": ["You own the following shares: ABBV, AAPL, FB, NVDA and an ETF of the S&P 500 Index!"]
+      "responses": ["I can provide any of the following services\n1.Enquiry about SUST \n2.Admission Date and Time \n3.Checking Exam centre\n4.Providing admission test result\n5.Payment Update\n6.Admission queries\n7.Information about various Departments\n8.Residential information\n9.Information about various campus organizations"]
     },
     {
         "tag": "sust_chatbot",
         "patterns": ["what is you?", "Tell me something about you", "Who are you?", "who you are?","what is sust chatbot?","Sust Chatbot"],
-        "responses": ["You own the following shares: ABBV, AAPL, FB, NVDA and an ETF of the S&P 500 Index!"]
+        "responses": [" SUST Chatbot is a smart user interface with updates and answers about SUST admission test related queries. Also it provides an overview of different queires related to SUST."]
     },
     {
         "tag": "exam_center",
         "patterns": ["where will be the exam today?","where is the exam center?","Tell me about the exam center","Exam center","I don't know anout my exam center",
         "Test center","Examination center","I need to know the address of my exam center","Can you help me find the exam center for my subject?"],
-        "responses": ["You own the following shares: ABBV, AAPL, FB, NVDA and an ETF of the S&P 500 Index!"]
+        "responses": ["SUST IICT Building"]
     },
     {
         "tag": "result",
@@ -174,24 +182,20 @@
         "What was my performance in the exam?",
         "Can you give me my examresult summary?",
         "What is my result",
-        "Whats the result",
+      
         "Is result published?"],
-        "responses": ["You own the following shares: ABBV, AAPL, FB, NVDA and an ETF of the S&P 500 Index!"]
+        "responses": ["Passed"]
     },
     {
       "tag": "resident",
       "patterns": [
         "What is the hall facility of SUST?",
         "How many halls are in here?",
-       "Halls of sust",
-	
-        "SUST Hall",
-        "Hall seats of SUST",
-        "Hall facilities",
 "Sust er hall gula kemon",
 "SUST hall availability",
+"SUST halls",
 "Seats in hall",
-"Sust hall seats",
+"SUST hall info",
        "SUST er hall obostha",
 "Hall numbers"
 
@@ -206,7 +210,191 @@
 "SUST admission cost","How much money needed?"
 ],
       "responses": ["It will take 10,000tk in the first admission"]
-    },{
+    },
+    {
+      "tag": "document",
+      "patterns": [
+        "What should I bring with me ?",
+"What are needed for admission?",
+"What is the requirements in admission",
+"what i need to bring with me ?",
+"which documents are needed in admission time?",
+"Which informations are needed in admission"
+      ],
+      "responses": ["Hello. Students who did not submit their HSC & SSC original Marksheets at SUST, are requested to bring their original academic documents (either all Marksheets or Certificates). "]
+    },
+    {
+      "tag": "fet",
+      "patterns": [
+        "Tell me about fet department",
+"why should i get admitted into fet dept",
+"fet dept",
+"Forestry and Environmental Science",
+"Fet is under which school",
+"Facilities of FET dept","Fet facilities",
+"Overview of FET",
+"FET is under which school"
+      ],
+      "responses": ["Forestry and Environmental Science is under School of Agriculture and Mineral Sciences.A good number of experienced and devoted faculties and students coming from a broad range of backgrounds are in constant pursuit of seeking and creating knowledge in forestry. The department of FES presently offers 4-years BSc (Hons.) and two MSc degrees, MSc (General) and MSc (Thesis) in Forestry. On average, the department produces 50 graduates and 30 postgraduates each year.The department/school now provides ample opportunities to the students and faculties for education and research. The school is currently equipped with laboratory facilities in several relevant fields of research including plant genetics and biotechnology, remote sensing and Geographical Information System (GIS), forest ecology and management, and nursing of plants in a big nursery.Apart from regular academic activities, the department arranges technical seminars, thematic presentations, field visits, and national and international forest and environment-related days and events."]
+    },
+
+{
+        "tag": "Architecture",
+      
+      "patterns": [
+        "Tell me about archietecture department",
+"why should i get admitted into arc dept",
+"arc dept",
+"speciality of architecture dept",
+"Architecture dept",
+"Arc is under which school",
+"Facilities of ARC dept","Architecture facilities",
+"Overview of ARC",
+"ARC is under which school"
+      ],
+        "responses": ["Architecture (ARC) is one of the prestigious departments in Shahjalal University of Science and Technology (SUST) which was established in 2004 with an objective of keeping a pioneering role in the built environment of Bangladesh, especially in the north-eastern region. Department of Architecture offers a five years long bachelor's degree, where courses are designed in such a way so that students graduating from this department have a balance of theory and practical skills to prepare themselves for the highly competitive multidisciplinary workplace in the country and beyond. Academics and students are participating in activities of international architectural organizations like ARCASIA, CAA and others.Architecture dept is situated in A building"]
+    },
+    {"tag": "condition",
+    "patterns": [
+    "how are you",
+    "how r u",
+    "hw r u",
+    "kemon acho?",
+    "kmn acho",
+    "kmn aco",
+    "kamon aso",
+    "kemon achen",
+    "ki obostha?",
+    "valo to?"
+    ],
+    "responses": ["I'm good. How about you?" ,"Going well, tell me 'bout you!.Everything is great.How are you?"
+    ]
+  }
+    ,
+    {
+    "tag": "food and cafeteria",
+    "patterns": [
+    "Where can I get food",
+    "Where food?",
+    "cafeteria around here",
+    "cafe",
+    "tea stalls",
+    "khabar koi pabo?",
+    "khabar kothay paoa jay?",
+    "khana",
+    "where i get food",
+    "i want to eat",
+    "find me a place to eat",
+    "tell me about food court",
+    "khani koi paitam?",
+    "khabar dorkar",
+    "khete chai, kothay jabo?"
+    ],
+    "responses": [ "Certainly, you'll get food here. There is one Cafeteria at IICT Building and another one is Central Cafeteria which is located behind Academic Building C and beside Academic Building E. You'll also find food court and tea stalls around Gol Chattar. There are more Tongs in front of Academic Builading E. Enjoy!"
+    ]
+    
+  },
+  {
+    "tag": "Singing_Organizations",
+    "patterns": [
+    "Is there any singing club?",
+    "Gaan gaoar organization",
+    "sing",
+    "song",
+    "musical organisation",
+    "music school",
+    "singers",
+    "gaan gaoar kono platform ache?",
+    "music clubs"
+    ],
+    "responses": 
+    ["There are three musical organizations around here. RIM Musical Club Nongar Shikor Feel free to join."]},
+{
+        "tag": "CEP",
+      
+      "patterns": [
+        "Tell me about cep department",
+"why should i get admitted into cep dept",
+"cep dept",
+"speciality of cep dept",
+"cep dept",
+"CEP is under which school",
+"Facilities of CEP dept","Chemical Technology and Polymer Science facilities",
+"Overview of Chemical Technology and Polymer Science","Chemical engineering of sust",
+"SUST cep",
+"CEP is under which school"],
+        "responses": ["The Department was founded in 1993 as the ‘Department of Chemical Technology and Polymer Science’ under the School of Applied Sciences and Technology.From the beginning educational programs at undergraduate and graduate level, and researches in the field of Chemical, process and environmental Engineering, and polymer technology have been developed in co-operation with national and international Institutions, and the quality and relevance of its activity is now recognized internationally, accredited by the ‘Board of Accreditation for Engineering and Technical Education (BAETE)’, Bangladesh in 2010.Currently, the academic staff comprises 25 members, 12 of them holding a PhD. Their activities are supported by 7 technical staff and research students. Researchers are engaged in R&D projects with internal and external funding. CEP department is in B building."]
+    },
+ {
+      "tag": "CEE",
+      "patterns": ["Tell me about cee department",
+"why should i get admitted into cee dept",
+"cee dept",
+"speciality of cee dept",
+"cee dept",
+"CEE is under which school",
+"Facilities of CEE dept","Civil and Environmental Engineering facilities",
+"Overview of Civil and Environmental Engineering facilities","Civil and Environmental Engineering facilities of sust",
+"SUST cep",
+"Civil in sust",
+"CEE is under which school"],
+      "responses": ["The Department of Civil and Environmental Engineering (CEE) is one of the most prestigious departments of Shahjalal University of Science and Technology (SUST)."]
+    },
+    {
+      "tag": "CSE",
+      "patterns": ["Tell me about cse department",
+"why should i get admitted into cse dept",
+"cse dept",
+"speciality of cse dept",
+"cse dept",
+"CSE is under which school",
+"Facilities of CSE dept","Computer Science & Engineering",
+"Overview of Computer Science & Engineering facilities","Computer Science & Engineering facilities of sust",
+"SUST CSE",
+"Wanna know about SUST CSE",
+"CSE in sust",
+"CSE is under which school"],
+      "responses": ["Department of Computer Science & Engineering got down to its journey along with that of School of Applied Science in 1992, the time from which till today it heaves the strength with non-breaking waves. Besides four year undergraduate program this department is also successfully running some other activities like Post-graduate Diploma in Information Technology (one year program financed by the ministry of Science, Information & Communication Technology), Certificate in Computer Application (two term program jointly operated with computer center), CISCO Certified Network Program (four term one year program in collaboration with UNDP and CISCO), DCSA program operated jointly with Bangladesh Open University. Department has successfully run some research activities in collaboration with different universities of home & abroad. Some of them are Bangla Computerization, Natural Language Processing, Optical Character Recognition, Parallel Processing, Cluster Computer, CodeWitz, Asia Link Project, and Cellular Phone & Computer Interfacing etc. It has some sole student activities like Participation in ACM Regional and National Programming Competition, Arranging Computer Fair, Publication of Departmental Research Journal etc. Software House is departments another dazzling side whose aspire is to provide the students a professional working environment, which will sharpen their skill in software development. It was first started with 7 students and some young energetic teachers but now many students with highly motivated teachers are working incessantly to put it in pinnacle among all software development companies. CSE Dept is in IICT building."]
+    },
+    {
+      "tag": "cse_research",
+      "patterns": ["research field of cse","Sust cse research field","sust cse research works","cse researches","cse research","Cse ree history"],
+      "responses": ["Some common research works of SUST CSE are- 1.Corpus Linguistics, 2.Neural Machine Translation,3.Statistical Machine Translation,4.Parts-of-speech Tagging"]
+    },
+    {
+      "tag": "eee",
+      "patterns": ["Tell me about eee department",
+      "why should i get admitted into eee dept",
+      "eee dept",
+      "speciality of eee dept",
+      "eee dept",
+      "EEE is under which school",
+      "Facilities of EEE dept",
+      "Electrical & Electronic Engineering",
+      "Overview of Electrical & Electronic Engineering facilities","Electrical & Electronic Engineering facilities of sust",
+      "SUST EEE",
+      "Wanna know about SUST EEE",
+      "EEE in sust",
+      "EEE is under which school"],
+      "responses": ["The Department of Electrical & Electronic Engineering (EEE) has started it's journey in 24 January 2011 in the School of Applied Science & Technology of Shahjalal University of Science and Technology (SUST). Our outstanding faculty bring state-of-the-art research, development, and design experience into the classroom, ensuring that our students and alumni are amongst the best in their fields and that our research advances the scientific community as well as society and business. Currently department offers a four-year undergraduate program (B. Sc. Engineering) in Electrical and Electronic Engineering (EEE) and in very near future department is expecting to offer Masters Degree in Electrical and Electronic Engineering. Current B.Sc program provides comprehensive theoretical, practical and hands-on training through engineering design, project work and laboratory experiments. An industrial attachment program in third year enriches students’ experience in real-life engineering."]
+    },
+    {
+      "tag": "ipe",
+      "patterns": ["Tell me about sust ipe","why should i get admitted into ipe dept",
+      "ipe dept",
+      "speciality of ipe dept",
+      "ipe dept",
+      "IPE is under which school",
+
+      "Industrial & Production Engineering",
+      "Overview of Industrial & Production Engineering facilities","Industrial & Production Engineering facilities of sust",
+      "SUST IPE",
+      "Wanna know about SUST IPE",
+      "IPE in sust",
+      "IPE is under which school"],
+      "responses": ["Established in 1995 as the first industrial engineering discipline (undergraduate level) in Bangladesh, the Department of Industrial and Production Engineering at SUST has made a name for itself in the engineering industry through excellence and innovation in research and education."]
+    },
+    {
       "tag": "goodbye",
       "patterns": [
         "cya",
@@ -220,7 +408,7 @@
         "see ya",
         "See u"
       ],
-      "responses": ["Sad to see you go :(", "Talk to you later", "Goodbye!"]
+      "responses": ["Sad to see you go :(", "Talk to you later"]
     }
   ]
 }
